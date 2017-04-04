@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SignUp" parent="AppTheme">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SignUp.EditText" parent="SignUp">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SignUp.EditText.Email" parent="SignUp.EditText">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="SignUp.EditText.Password" parent="SignUp.EditText">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="SignUp.Button" parent="SignUp">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+</resources>
