@@ -2,15 +2,7 @@
     <string name="app_name">MCTDDDemo</string>
 
     <string name="signup_name_hint">Enter your name</string>
-    <string name="signup_email_hint">Enter your email</string>
     <string name="signup_password_hint">Enter your password</string>
     <string name="signup_signup">Sign up</string>
-
-    <string name="signup_name_empty">Name has to be filled</string>
-    <string name="signup_name_has_to_be_4_characters">Name has to be at least 4 characters</string>
-    <string name="signup_name_exists">This name already exists</string>
-    <string name="signup_password_too_short">Password has to be at least 8 characters</string>
-    <string name="signup_password_no_capital_letter">Password has to contain at least one capital letter</string>
-    <string name="signup_password_no_number">Password has to contain at least one number</string>
 
 </resources>
