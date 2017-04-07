@@ -1,5 +1,7 @@
 package com.kasparpeterson.mctdddemo.signup;
 
+import android.support.annotation.NonNull;
+
 import com.kasparpeterson.simplemvp.MVPBaseModel;
 import com.kasparpeterson.simplemvp.MVPBasePresenter;
 import com.kasparpeterson.simplemvp.MVPBasePresenterModelOperations;
@@ -13,7 +15,7 @@ public interface SignUpMVP {
 
     // Presenter -> View
     interface ViewOperations extends MVPBaseViewOperations {
-
+        void showView(@NonNull SignUpViewState viewState);
     }
 
     // View -> Presenter
@@ -24,16 +26,15 @@ public interface SignUpMVP {
             super(view, model);
         }
 
+        abstract void onSignUpClicked(String name, String password);
     }
 
     // Model -> Presenter
     interface PresenterModelOperations extends MVPBasePresenterModelOperations {
-
     }
 
     // Presenter -> Model
     abstract class ModelOperations extends MVPBaseModel<PresenterModelOperations> {
-
     }
 
 }

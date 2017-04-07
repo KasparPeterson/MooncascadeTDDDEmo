@@ -6,17 +6,22 @@
 
     <EditText
         style="@style/SignUp.EditText"
-        android:id="@+id/signup_name_text_view"
+        android:id="@+id/signup_name_edit_text"
         android:hint="@string/signup_name_hint"/>
 
     <EditText
         style="@style/SignUp.EditText.Password"
-        android:id="@+id/signup_password_text_view"
+        android:id="@+id/signup_password_edit_text"
         android:hint="@string/signup_password_hint"/>
 
     <Button
         style="@style/SignUp.Button"
         android:id="@+id/signup_button"
         android:text="@string/signup_signup"/>
+
+    <TextView
+        android:id="@+id/signup_state_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
